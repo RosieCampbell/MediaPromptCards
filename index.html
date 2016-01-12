@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Starter Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
+
+    <title>2 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
-  </head>
 
-  <body>
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
+</head>
+
+<body>
+    <!-- Page Content -->
     <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                  <button id="more" type="button" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button>
+                </h1>
+            </div>
+        </div>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+              <img id="img1" class="img-responsive" src="http://ichef.bbci.co.uk/news/660/cpsprodpb/15053/production/_85099068_85098760.jpg" alt="">
+            </div>
+            <div class="col-md-6 portfolio-item">
+              <img id="img2" class="img-responsive" src="http://blogs-images.forbes.com/insertcoin/files/2015/03/call-of-duty.jpg" alt="">
+            </div>
+        </div>
 
-    </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script>
+    $('#more').on('click', function (e) {
+      var urls1 = ["http://images.radiotimes.com/namedimage/Are_The_Great_British_Bake_Off_s_beloved_innuendoes_under_threat_.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/53792.jpg", "https://summerfruitcup.files.wordpress.com/2011/11/crystal-maze-crystal-dome.jpg"];
+      var urls2 = ["http://img00.deviantart.net/95ba/i/2013/057/a/5/gm___fire_mario_bros__by_ratchetmario-d5w9xzq.jpg", "http://www.thewrap.com/wp-content/uploads/2014/07/space-invaders.png"];
+      var rand1 = Math.floor(Math.random()*urls1.length);
+      var rand2 = Math.floor(Math.random()*urls2.length);
+      $('#img1').attr("src", urls1[rand1]);
+      $('#img2').attr("src",urls2[rand2]);
+    });
+
+</script>
+
+</body>
+
 </html>
