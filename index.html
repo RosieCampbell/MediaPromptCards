@@ -58,8 +58,25 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     $('#more').on('click', function (e) {
-      var urls1 = ["http://images.radiotimes.com/namedimage/Are_The_Great_British_Bake_Off_s_beloved_innuendoes_under_threat_.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/53792.jpg", "https://summerfruitcup.files.wordpress.com/2011/11/crystal-maze-crystal-dome.jpg"];
-      var urls2 = ["http://img00.deviantart.net/95ba/i/2013/057/a/5/gm___fire_mario_bros__by_ratchetmario-d5w9xzq.jpg", "http://www.thewrap.com/wp-content/uploads/2014/07/space-invaders.png"];
+      var urls1 = [
+        "http://images.radiotimes.com/namedimage/Are_The_Great_British_Bake_Off_s_beloved_innuendoes_under_threat_.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/53792.jpg",
+        "https://summerfruitcup.files.wordpress.com/2011/11/crystal-maze-crystal-dome.jpg",
+        "http://www.thecultureconcept.com/circle/wp-content/uploads/2011/03/Professor-Brian-Cox.jpg",
+        "http://www.upfrontmama.com/wp-content/uploads/2015/04/cbeebies-inthenightgarden-img-inthenightgarden_slideshow_main.jpg",
+        "http://efdreams.com/data_images/dreams/volcano/volcano-13.jpg",
+        "http://i1.wp.com/www.metalinjection.net/wp-content/uploads/2014/04/Game-of-Thrones-metal.jpg?fit=750%2C1000",
+        "http://www.nytimes.com/images/blogs/tvdecoder/posts/0108/gladiators1.jpg"
+    ];
+      var urls2 = [
+        "http://img00.deviantart.net/95ba/i/2013/057/a/5/gm___fire_mario_bros__by_ratchetmario-d5w9xzq.jpg",
+        "http://www.thewrap.com/wp-content/uploads/2014/07/space-invaders.png",
+        "http://www.familyfourfun.co.uk/wp-content/uploads/2013/07/5-pack-TT-spread-636x310.jpg",
+        "http://www.televisionheaven.co.uk/img/knightmare.jpg",
+        "http://i.kinja-img.com/gawker-media/image/upload/dthlwnjos5v6y8ctsygj.jpg",
+        "http://gadgetsdeal.in/wp-content/uploads/2013/08/Q450-quadcopter-kopen.jpg",
+        "http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/12/12/1323708838014/Deal-Or-No-Deal-007.jpg",  
+        "http://icons.iconarchive.com/icons/hopstarter/face-avatars/icons-390.jpg"
+      ];
       var rand1 = Math.floor(Math.random()*urls1.length);
       var rand2 = Math.floor(Math.random()*urls2.length);
       $('#img1').attr("src", urls1[rand1]);
